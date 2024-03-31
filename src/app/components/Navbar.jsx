@@ -28,7 +28,7 @@ const Navbar = ({ searchQuery, setSeachQuery }) => {
             alt="heart"
           />
           <Image
-            className=" w-6 h-6"
+            className=" w-6 h-6 opacity-60"
             src={user}
             width={16}
             height={16}
