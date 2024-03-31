@@ -10,7 +10,7 @@ const Navbar = ({ searchQuery, setSeachQuery }) => {
     <nav className="px-10 py-2  ">
       <div className=" flex items-center justify-between  ">
         <div>
-          <h1 className=" text-logo font-semibold text-xl">BookUsNow</h1>
+        <h1 className="text-red-600 font-semibold text-xl">BookUsNow</h1>
         </div>
         <div className="flex gap-x-2 items-center sm:hidden">
           <Image
