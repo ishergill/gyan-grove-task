@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 // !components
 import EventCard from "./EventCard";
 import Loader from "./Loader";
+import Link from "next/link";
 
 const EventSection = () => {
   // *Local States
@@ -57,9 +58,17 @@ const EventSection = () => {
 
   return (
     <>
-      <h2 className=" ml-[5%] md:ml-[10%] text-black text-lg font-bold mt-10 mb-5 opacity-80 ">
+     <div className="flex gap-1 justify-between items-center py-[20px] w-[90%] sm:w-[80%] m-auto">
+
+
+      <h2 className=" text-black text-lg font-bold  opacity-80 ">
         Upcoming Events &#8594;
+       
       </h2>
+      <Link className="underline" href={'/'}>
+        See all
+      </Link>
+      </div>
       <div className="flex flex-wrap gap-4 m-auto justify-center px-4 sm:px-0">
         {eventsData ? (
           eventsData?.map((event, ind) => {
